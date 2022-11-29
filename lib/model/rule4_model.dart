@@ -8,8 +8,6 @@ class Rule4Model {
   factory Rule4Model.fromJson(Map<String, dynamic> json) {
     // var lit = json['imageData'] as List;
     // List<ImagesModel> listImagedata = lit.map((e) => ImagesModel.fromJson(e)).toList();
-   
-
      var list = json['images'] as List;
     print(list.runtimeType);
     List<ImagesModel> imagesList = list.map((i) => ImagesModel.fromJson(i)).toList();
